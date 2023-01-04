@@ -11,7 +11,7 @@
             {{ number }}
           </li>
         </div>
-        <div *ngIf="!onlyOdd">
+        <div *appUnless="onlyOdd">
           <li class="list-group-item" *ngFor="let number of evenNumbers">
             {{ number }}
           </li>
